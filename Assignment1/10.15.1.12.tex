@@ -1,3 +1,4 @@
+
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -299,51 +300,65 @@ A game of chance consists of spinning an arrow which comes to rest pointing at o
 
 
 \textbf{Solution:}
-\begin{enumerate}[(i)]
-    \item Let A be the event that the arrow will point at 8. As all the numbers are equally likely to come, 
-    
-    \begin{align}
-        \pr{A} = \textfrac{\large Number of outcomes favourable to A}{\large Number of all possible outcomes}
-        \nonumber
-     \end{align}
+Since, the numbers on the wheel are equally likely to come, this is a uniform distribution.
 
+Let X be a random variable defined as the value coming on the wheel.
+\begin{align}
+    \therefore \pr{X = x} =
+        \begin{cases}
+            \frac{\large1}{\large8} & 1\le x\le 8
+            \\ 0 & otherwise
+        \end{cases}
+    \nonumber
+\end{align}
+
+So the Cumulative Distribution Function (CDF) would be,
+\begin{align}
+    F_{X} \brak{x} &= \pr{X \leq x} \nonumber
+    \\ &=
+    \begin{cases}
+        0 & x \le 0\\
+        \sum_{i=0}^{x} {\pr{X=i}} & 1 \le x \le 8\\
+        1, & x\ge 9
+    \end{cases}
+\nonumber    
+\end{align}
+\begin{enumerate}[(i)]
+    \item Clearly, from the pmf,     
     \begin{align}
-        \therefore \pr{A} = \textfrac {\large 1} {\large 8}  
+        \pr{X=8} = \frac{\large 1}{\large 8}
         \nonumber
      \end{align}
         
-    \item Let B be the event that the arrow will point at an odd number. We have four odd numbers, hence the number of outcomes favourable to B are 4.
-
+    \item Let x $\in \cbrak{1,3,5,7}$
     \begin{align}
-        \therefore \pr{B} = \textfrac {\large 4}{\large 8} 
-        \nonumber
-     \end{align}
-    
-    \begin{align}
-        \therefore \pr{B} = \textfrac {\large 1}{\large 2} 
-        \nonumber
+        \therefore \pr{X=x} = \pr{X=1} + \pr{X=3} \nonumber
+        \\ + \pr{X=5} + \pr{X=7}  \nonumber
     \end{align}
-    \item Let C be the event that the arrow will point at a number greater than 2. We have 6 numbers greater than 2, hence the number of outcomes favourable to C are 6.
-
     \begin{align}
-    \therefore \pr{C} = \textfrac {\large 6}{\large 8} 
-        \nonumber
-     \end{align}
-
-    \begin{align}
-    \therefore \pr{C} = \textfrac {\large 3}{\large 4} 
-        \nonumber
-     \end{align}
-    
-    \item Let D be the event that the arrow will point at a number less than 9. We have 8 numbers less than 9, hence the number of outcomes favourable to C are 8.
-    \begin{align}
-        \therefore \pr{D} = \textfrac {\large 8}{\large 8}  
+        =  \textfrac {\large 4}{\large 8} 
         \nonumber
     \end{align}
     \begin{align}
-        \therefore \pr{D} = 1
+        \therefore \pr{X = x} = \textfrac {\large 1}{\large 2} 
         \nonumber
-    \end{align}        
+    \end{align}
+    
+    \item For the number to be greater than 2,
+    \begin{align}
+    \pr{X > 2} &= 1 - \pr{X \le 2}  \nonumber\\
+    &= 1 - F_{X}\brak{2}  \nonumber\\
+    &= \frac{6}{8}  \nonumber\\
+    &= \frac{3}{4}  \nonumber
+    \end{align}
+    
+    \item For the number to be less than 9,
+    \begin{align}
+        \pr{X < 9} &= \pr{X \le 8}   \nonumber\\
+                   &= F_{X}\brak{8}  \nonumber\\
+                   &= \frac{8}{8}  \nonumber\\
+                   &= 1             \nonumber
+    \end{align}    
     
 \end{enumerate}
 }
@@ -362,3 +377,5 @@ A game of chance consists of spinning an arrow which comes to rest pointing at o
 %\numberwithin{equation}{enumi}
 
 \end{document}
+
+
