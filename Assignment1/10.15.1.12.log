@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  11 MAY 2023 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.25)  11 MAY 2023 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1224,16 +1224,16 @@ Underfull \vbox (badness 3417) has occurred while \output is active []
 
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 332.
+LaTeX Font Warning: Command \large invalid in math mode on input line 333.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 332.
+LaTeX Font Warning: Command \large invalid in math mode on input line 333.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 332.
+LaTeX Font Warning: Command \large invalid in math mode on input line 333.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 332.
+LaTeX Font Warning: Command \large invalid in math mode on input line 333.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
